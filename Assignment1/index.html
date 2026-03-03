@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SportX | Sports Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1 class="logo">Sport<span>X</span></h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Categories</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact</a>
+    </nav>
+    <button class="nav-btn">Login</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Gear Up for the Game</h2>
+        <p>Premium sportswear & equipment for champions</p>
+        <button class="hero-btn">Shop Now</button>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section categories">
+    <h2>Shop by Category</h2>
+
+    <div class="category-grid">
+        <div class="category-card">Football</div>
+        <div class="category-card">Cricket</div>
+        <div class="category-card">Running</div>
+        <div class="category-card">Gym & Fitness</div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section products">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="data:image/avif;base64,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" alt="">
+            <h3>Running Shoes</h3>
+            <p>₹4,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="">
+            <h3>Football Jersey</h3>
+            <p>₹1,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="">
+            <h3>Dumbbell Set</h3>
+            <p>₹3,499</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer-banner">
+    <h2>🔥 Flat 40% OFF on Sports Gear</h2>
+    <button>Grab Deal</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 SportX. All rights reserved.</p>
+</footer>
+
+</body>
+<script>
+    const navBtn = document.querySelector('.nav-btn');
+
+    navBtn.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
+</script>
+</html>
