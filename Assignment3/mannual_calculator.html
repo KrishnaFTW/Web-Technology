@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <input type="text" id ="t1" value="">
+        <br>
+        <input type="text" id="t2" value="">
+        <br>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+    </body>
+    <script>
+        function add() {
+            const num1 = parseFloat(document.getElementById('t1').value);
+            const num2 = parseFloat(document.getElementById('t2').value);
+            alert(num1 + num2);
+        }
+
+        function subtract() {
+            const num1 = parseFloat(document.getElementById('t1').value);
+            const num2 = parseFloat(document.getElementById('t2').value);
+            alert(num1 - num2);
+        }
+    </script>
+</html>
