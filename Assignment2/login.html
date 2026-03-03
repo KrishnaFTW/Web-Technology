@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="center">Login Page.</h1>
+
+<div class="auth-card">
+    <h2>Login</h2>
+
+    <form>
+        <div class="input-group">
+            <input type="email" required id="email">
+            <label>Email</label>
+        </div>
+
+        <div class="input-group">
+            <input type="password" required id="pass">
+            <label>Password</label>
+        </div>
+
+        <button class="auth-btn">
+            <a href="index.html">Login</a>
+        </button>
+
+        <div class="auth-link">
+            Don't have an account?
+            <a href="signup.html">Sign up</a>
+        </div>
+    </form>
+</div>
+
+</body>
+<script>
+    const btn = document.querySelector('.auth-btn');
+
+    btn.addEventListener('click', (e) => {
+        const email = document.getElementById('email').value;
+        const pass = document.getElementById('pass').value;
+
+        if (email === 'krishnaranode@gmail.com' && pass === '12345') {
+            e.preventDefault();
+            window.location.href = "index.html";
+        } else {
+            e.preventDefault();
+            alert('Invalid email or password.'); 
+        }
+    });
+</script>
+</html>
